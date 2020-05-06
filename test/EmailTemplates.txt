@@ -1,0 +1,39 @@
+%%Summary-Subject
+ACME Corporation Report : {ISBN}
+%%Summary-Body
+Please find attached a summary of the ACME Corporation report:
+
+Report Number : {ISBN}
+
+Title : {Title}
+
+Author : {Authors}
+
+{Summary}
+
+
+To access the report, please click on this link to the ACME Corporation Catalogue: 
+
+Link to Report : {Link}
+
+
+If you have not already registered to use this Catalogue, or if you experience difficulties using it, please contact:
+{FromName}
+{FromEmail}
+
+%%Full-Subject
+ACME Corporation Report : {ISBN}
+%%Full-Body		
+Please find attached the full pdf of the ACME Corporation report:
+
+Report Number : {ISBN}
+
+Title : {Title}
+
+Author : {Authors}
+
+Should there be any problems receiving this report or should you require a signed and dated copy for legal reasons please contact:
+{FromName}
+{FromEmail}
+
+
