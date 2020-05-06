@@ -6,18 +6,18 @@ Mistware is an identity chosen to evoke the concept of [Vapourware](https://en.w
 This Mail Merge Engine enables a web app to quickly construct a list of emails to send, and then have this list processed as a background thread. It uses SendGrid to send the emails. Each email has a plain text body, and an optional attachment. The subject and body of each email is generated from a template. 
 
 Emails are sent as batch of related emails from one sender. Each email batch consists of:
-1. Name - The name of the batch.
-2. From - The person sending the batch (email address and name).
-3. The email to be used as the sending address (email address and name) - Postmaster.
-4. A list of email recipients (see next) - Recipients.
+1. Name - the name of the batch.
+2. From - the person sending the batch (email address and name).
+3. Postmaster - the email to be used as the sending address (email address and name).
+4. Recipients - a list of email recipients (see next).
 
 It is typically the case that Postman (i.e. SendGrid) is used outside an internal company network. In that case emails cannot be sent from the sender (From email address and name), because those emails will be blocked by the company's firewall / mail gateway (which quite rationally rejects external emails with an internal domain). Instead emails must be sent from a fictitious 'Postmaster' email address (which has a domain outside the company domain).   
 
 Each email recipient consists of: 
-1. A recipient (email address and name) - To.
-2. A delivery type - a code the selects the respective template - DeliveryType.
-3. A dictionary of parameters to substitute into the template - MailMergeFields.
-4. The filename of an optional attachment (if the filename is null, then no attachment is sent) - Attachment.
+1. To - a recipient (email address and name).
+2. DeliveryType - delivery type - a code the selects the respective template.
+3. MailMergeFields - a dictionary of parameters to substitute into the template.
+4. Attachment - the filename of an optional attachment (if the filename is null, then no attachment is sent).
 
 The templates are stored in a single file, where each tempate is identfied by a code (delivery type), for example the XYZ template:
 
